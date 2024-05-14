@@ -1,0 +1,105 @@
+body {
+    background-image: url("bglogo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: contain; 
+    }
+
+    .container {
+        margin-top: 30%;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+.container {
+    margin-top: 15%;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: transparent; 
+    color: #ffc107;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #ffc107; /* Changed */
+    color: #000;
+}
+
+.button i {
+    margin-right: 10px;
+}
+
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    width: calc(25% - 20px);
+    background-color: #fff; 
+    color: #000;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+.card p.underline {
+    text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 250px;
+}
